@@ -23,7 +23,8 @@
 # 'goodbye' will end the program
 # If asked a question, Eliza will redirect the user
 # 
-# When a line is inputted, the program will remove the end punctuation.
+# First Eliza detects the user's name, searching for 'is' 'am' or just a single word inputted
+# Then, when a line is inputted, the program will remove the end punctuation.
 # If there are multiple "I" statements, Eliza will take the last one.
 # Then, keywords are tested for in a certain order.
 # If none of the keywords are included, Eliza will ask a generic statement.

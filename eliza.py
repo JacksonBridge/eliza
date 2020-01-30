@@ -1,3 +1,35 @@
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+# eliza
+# 
+# Jackson Hambridge
+# CMSC 416 - 1 January 2020
+# This program will start a dialogue with the user.
+# Please input clear, correct sentences.
+# Eliza will turn inputted phrases into dialogue.
+# Run this program in Python 3 in the command line
+# Elize will prompt the user.  For example...
+#
+# >> [Eliza] What is on your mind today?
+# >> I am sad.
+# >> [Eliza] Why are you sad?
+# >> I missed my birthday.
+# >> Why did you miss your birthday?
+#
+# Eliza tests for key words such as 'am' 'were' 'are'
+# or tenses such as -'ed' and converts them into questions.
+# 
+# Eliza checks for 'to be' verbs in different tenses as well
+#
+# 'goodbye' will end the program
+# If asked a question, Eliza will redirect the user
+# 
+# When a line is inputted, the program will remove the end punctuation.
+# If there are multiple "I" statements, Eliza will take the last one.
+# Then, keywords are tested for in a certain order.
+# If none of the keywords are included, Eliza will ask a generic statement.
+#
+
+
 import re
 import random
 
@@ -253,7 +285,7 @@ print("[Eliza] Welcome, " + name + "! What is on your mind today?")
 present=1
 while(present==1):
     line=input()
-    # The keybord 'Goodbye' will exit the Eliza
+    # The keyword 'Goodbye' will exit the Eliza
     if search("[Gg]oodbye",line):
         present=0
         print("[Eliza] " + name + ", thank you for coming in today. Have a great day!")
